@@ -693,6 +693,9 @@
 <!-- ==========================================================================
          RESULTADOS: SLIDER ANTES / DESPUÉS
          ========================================================================== -->
+   <!-- ==========================================================================
+         RESULTADOS: SLIDER ANTES / DESPUÉS
+         ========================================================================== -->
     <section id="galeria" class="scroll-mt-24 sm:scroll-mt-28 py-16 sm:py-24 md:py-32 bg-[#080808] border-t border-white/10 relative z-20">
         <div class="max-w-7xl mx-auto px-5 sm:px-8 md:px-12">
             
@@ -715,18 +718,18 @@
 
                 <div id="ba-slider" class="ba-stage max-w-4xl mx-auto aspect-[4/3] sm:aspect-[16/9] border border-white/20 overflow-hidden shadow-2xl rounded-sm">
                     
-                    <img src="cristel fotos/fotodecabellolargoconextensionesreciencolocadas.webp" alt="Después: Melena con volumen y largo completo" class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none">
+                    <img src="despueschicarubia.webp" alt="Después: Cabello con extensiones colocadas" class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none">
                     
                     <div id="ba-clip" class="ba-clip-layer" style="width: 50%;">
-                        <img id="ba-before-img" src="cristel fotos/clienteconextensionesydostonosdecabello.webp" alt="Antes: Cabello previo a la colocación" class="ba-inner-img select-none">
+                        <img id="ba-before-img" src="anteschicarubia.webp" alt="Antes: Cabello previo a la colocación" class="ba-inner-img select-none">
                     </div>
 
                     <div id="ba-badge-after" class="ba-badge-static right-3 sm:right-5 bg-noir/90 border border-white/30 px-2.5 py-1 text-[8px] sm:text-[9px] font-bold tracking-wider text-alabaster uppercase backdrop-blur-md">
-                        Resultado Final
+                        Después
                     </div>
 
                     <div id="ba-badge-before" class="ba-badge-static left-3 sm:left-5 bg-noir/90 border border-gold/50 px-2.5 py-1 text-[8px] sm:text-[9px] font-bold tracking-wider text-gold uppercase backdrop-blur-md">
-                        Base Previa
+                        Antes
                     </div>
 
                     <div id="ba-handle" class="absolute top-0 bottom-0 w-[2px] bg-gradient-to-b from-gold-light via-gold to-gold-dark z-30 pointer-events-none" style="left: 50%;">
@@ -737,8 +740,40 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- VIDEOS DE ANTES Y DESPUÉS SEPARADOS (CERCANOS AL SLIDER) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto mb-14">
+                <div class="group relative bg-noir-card border border-white/15 overflow-hidden aspect-[4/5] shadow-lg rounded-sm">
+                    <video autoplay loop muted playsinline preload="none" class="w-full h-full object-cover">
+                        <source src="antesydespues-extensiones.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute bottom-0 inset-x-0 p-5 bg-gradient-to-t from-noir via-noir/70 to-transparent">
+                        <span class="text-[8.5px] font-bold tracking-ultra text-gold uppercase font-mono">Antes y Después · Caso I</span>
+                        <h4 class="font-serif text-base sm:text-lg text-alabaster">Transformación en Salón</h4>
+                    </div>
+                </div>
+
+                <div class="group relative bg-noir-card border border-white/15 overflow-hidden aspect-[4/5] shadow-lg rounded-sm">
+                    <video autoplay loop muted playsinline preload="none" class="w-full h-full object-cover">
+                        <source src="antesydespues-extensiones2.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute bottom-0 inset-x-0 p-5 bg-gradient-to-t from-noir via-noir/70 to-transparent">
+                        <span class="text-[8.5px] font-bold tracking-ultra text-gold uppercase font-mono">Antes y Después · Caso II</span>
+                        <h4 class="font-serif text-base sm:text-lg text-alabaster">Integración de Largo y Volumen</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHICAS CON EXTENSIONES HECHAS (INCLUYE LAS 2 FOTOS QUE ESTABAN EN EL SLIDER) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 
+                <div class="group relative bg-noir-card border border-white/15 overflow-hidden aspect-[4/5] shadow-lg rounded-sm">
+                    <img src="cristel fotos/fotodecabellolargoconextensionesreciencolocadas.webp" alt="Melena larga con extensiones recién colocadas" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute bottom-0 inset-x-0 p-5 bg-gradient-to-t from-noir via-noir/70 to-transparent">
+                        <span class="text-[8.5px] font-bold tracking-ultra text-gold uppercase font-mono">Largo Completo</span>
+                        <h4 class="font-serif text-base sm:text-lg text-alabaster">Extensiones Recién Colocadas</h4>
+                    </div>
+                </div>
+
                 <div class="group relative bg-noir-card border border-white/15 overflow-hidden aspect-[4/5] shadow-lg rounded-sm">
                     <video autoplay loop muted playsinline preload="none" class="w-full h-full object-cover">
                         <source src="cliente-meneandocabellolargo-camaranormal.mp4" type="video/mp4">
@@ -771,7 +806,6 @@
 
         </div>
     </section>
-
     <!-- ==========================================================================
          EL ATELIER DE BELGRANO
          ========================================================================== -->
